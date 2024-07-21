@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Delivery App</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Browse Products</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Track Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Browse Products</h2>
+            <ul id="product-list">
+                <!-- Products will be displayed here -->
+            </ul>
+        </section>
+        <section id="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </ul>
+            <button id="checkout-btn">Checkout</button>
+        </section>
+        <section id="track-order">
+            <h2>Track Order</h2>
+            <p>Enter your order number to track your delivery:</p>
+            <input type="text" id="order-number">
+            <button id="track-btn">Track</button>
+            <div id="order-status">
+                <!-- Order status will be displayed here -->
+            </div>
+        </section>
+        <section id="payment">
+            <h2>Secure Payment</h2>
+            <form id="payment-form">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" required>
+                <label for="expiration-date">Expiration Date:</label>
+                <input type="text" id="expiration-date" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" required>
+                <button id="pay-btn">Pay</button>
+            </form>
+        </section>
+    </main>
+    <script src="script1.js"></script>
+</body>
+</html>
